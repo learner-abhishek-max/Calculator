@@ -5,14 +5,12 @@ const acbutton = document.querySelector("#AC");
 const cbutton = document.querySelector("#C");
 for (var i = 0; i < buttoms.length; i++) {
   buttoms[i].addEventListener("click", function () {
-    var currentButton = this; // Store the current button in a variable
-
+    var currentButton = this;
     if (
       currentButton == equalbutton ||
       currentButton == acbutton ||
       currentButton == cbutton
     ) {
-      // Do nothing for these buttons
     } else {
       display.textContent += currentButton.textContent;
     }
